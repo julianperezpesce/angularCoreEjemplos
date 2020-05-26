@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HijoComponent implements OnInit {
 
+  titulo: string = "Componente hijo";
   constructor() { }
 
   ngOnInit(): void {
