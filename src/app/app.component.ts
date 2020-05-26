@@ -10,8 +10,15 @@ export class AppComponent {
   @ViewChild ('inputNombre', {static: true}) inputNombre: ElementRef;
 
   constructor(){
-    console.log(this.inputNombre);
     
+    
+  }
+
+  mostrar(){
+    console.log(this.inputNombre);
+    console.log(this.inputNombre.nativeElement.value);
+    
+    this.inputNombre.nativeElement.style.background = "blue"
   }
 
 }
