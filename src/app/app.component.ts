@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,11 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class AppComponent {
   title = 'ejemplosCore';
-  @ViewChild ('inputNombre', {static: true})
+  @ViewChild ('inputNombre', {static: true}) inputNombre: ElementRef;
+
+  constructor(){
+    console.log(this.inputNombre);
+    
+  }
+
 }
