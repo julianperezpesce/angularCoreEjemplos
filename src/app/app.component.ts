@@ -19,8 +19,7 @@ export class AppComponent {
 
   mostrar(){
     // console.log(this.inputNombre);
-    // console.log(this.inputNombre.nativeElement.value);
-    
+    // console.log(this.inputNombre.nativeElement.value);    
     // this.inputNombre.nativeElement.style.background = "blue"
 
     this.hijo.titulo = 'Ha sido modificado desde el Padre'
