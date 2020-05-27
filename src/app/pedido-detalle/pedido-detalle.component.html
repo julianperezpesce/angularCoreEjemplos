@@ -6,11 +6,11 @@
         <th>Total</th>
     </tr>
     <tbody>
-        <tr>
-            <td>1</td>
-            <td>Agua mineral</td>
-            <td>50</td>
-            <td>50</td>
+        <tr *ngFor="let producto of pedidoDetalle">
+            <td> {{ producto.cantidad }}</td>
+            <td> {{ producto.producto }} </td>
+            <td> {{ producto.precio }} </td>
+            <td> {{ producto.total }} </td>
         </tr>
     </tbody>
 </table>
