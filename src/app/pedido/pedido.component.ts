@@ -23,5 +23,8 @@ export class PedidoComponent implements OnInit {
     })
   }
 
-  
+  elHijoEliminoAlgo(event){
+    console.log(event);
+    
+  }
 }
