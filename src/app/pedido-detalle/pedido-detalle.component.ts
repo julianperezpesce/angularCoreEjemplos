@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PedidoDetalle } from '../models/pedidoDetalle';
 
 @Component({
   selector: 'app-pedido-detalle',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PedidoDetalleComponent implements OnInit {
 
-  
+  pedidoDetalle: PedidoDetalle[] = new Array<PedidoDetalle>();
   constructor() { }
 
   ngOnInit(): void {
