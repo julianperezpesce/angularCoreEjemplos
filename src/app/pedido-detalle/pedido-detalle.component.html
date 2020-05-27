@@ -4,13 +4,15 @@
         <th>Producto</th>
         <th>Precio</th>
         <th>Total</th>
+        <th>Eliminar</th>
     </tr>
     <tbody>
-        <tr *ngFor="let producto of pedidoDetalle">
+        <tr *ngFor="let producto of pedidoDetalle; let i = index">
             <td> {{ producto.cantidad }}</td>
             <td> {{ producto.producto }} </td>
             <td> {{ producto.precio }} </td>
             <td> {{ producto.total }} </td>
+            <td><button (click)="eliminarProducto(i)">Eliminar</button> </td>
         </tr>
     </tbody>
 </table>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Pedido } from '../models/pedido';
 
 @Component({
@@ -22,4 +22,6 @@ export class PedidoComponent implements OnInit {
       total: 1600
     })
   }
+
+  
 }
