@@ -22,12 +22,20 @@ export class PedidoComponent implements OnInit {
       precio: 80,
       total: 1600
     })
-    Swal.fire('Producto agregado')
+    Swal.fire({
+      icon:"success" ,
+      title:'Producto agregado',
+      text: 'correctamente'
+    })
   }
 
   elHijoEliminoAlgo(event){
     this.pedido.pedidoDetalle.splice(event.index, 1)
     console.log(event);
-    Swal.fire('Producto eliminado')
+    Swal.fire({
+      icon:"warning" ,
+      title:'Producto eliminado',
+      text: 'correctamente'
+    })
   }
 }
